@@ -14,25 +14,20 @@ header {
 }
 
 nav {
-    width: 40%;
-    padding-right: 40px;
-}
-
-ul {
-   display: flex;
-   width: 100%;
-   justify-content: space-between; 
+    width: 25%;
+    margin-left: 190px;
 }
 
 li {
     list-style: none;
-    color: white;
+    color: #e5ab5ea8;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 20px;
     transition: .5s;
     font-family: 'Montserrat:wght@100';
     font-weight: bold;
-    margin-right: 20px;
+    margin-right: 12px;
+    margin-left: 20px;
 
 }
 
@@ -43,8 +38,8 @@ li:hover {
 #logo {
     width: 150px;
     height: auto;
-    padding-right: 170px;
-    margin-left: 0px;
+    padding-right: 160px;
+    margin-left: -15px;
 }
 
 #banner {
@@ -122,9 +117,9 @@ li:hover {
 .Biography{
     width: 500px;
     margin-top: 100px;
-    margin-left: 500px;
+    margin-left: 468px;
     color: #ac300e;
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Montserrat:wght@100';
     font-weight: bold;    
 }
