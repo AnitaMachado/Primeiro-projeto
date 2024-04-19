@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@100 & display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 60px;   
+    background: radial-gradient(farthest-corner, #ac300e, transparent),
+                radial-gradient(farthest-corner, #bd7921ba, transparent),
+                radial-gradient(farthest-corner, #da891e, transparent),
+                radial-gradient(farthest-corner, #1f6b916c, transparent);
+}
+
+ul {
+    display: flex;
+    justify-content: end;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .5s;
+    font-family: 'Montserrat:wght@100';
+    font-weight: bold;
+    margin-left: 5px;
+    padding-left: 25px;
+}
+
+li:hover {
+    color: black;
+}
+
+.title{
+    font-family: 'Montserrat:wght@100';
+    font-weight: bold;
+    font-size: 30px;   
+    margin-left: 500px;
+    color: #ac300e;    
+}
+
+.cards-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-left: 15px;
+    margin-top: 50px;
+}
+
+.card{
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    padding: 5px  5px  5px 5px; 
+    width: 280px;
+    height: 250px; 
+}
+
+.photo-1{
+    background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLUy-vNzb25AMpGkTawIXSJMQJ6q76jzhyeIbIYXoSLW8XSIowquGy9WPUaowGQ-f5x8uX7K3X6NJ8WpzNwpQgRXuW8CIHdNtNgrIahQ4Dl2ux4aTZDFDQvTH_y3q6P6GRiLUYLpUewsq3_QL5cej6dAnt8J8M0jVdcCAg92Jt5nXc1e6T6ypr1heJ/s1600/amulherei-filmevioladavis2.webp);
+}
+
+.photo-2{
+    background-image: url(https://br.web.img2.acsta.net/r_1920_1080/pictures/22/08/08/13/53/1983200.jpg);
+}
+
+.photo-3{
+    background-image: url(https://br.web.img2.acsta.net/r_1920_1080/pictures/22/08/08/13/53/1941080.jpg);
+}
+
+.photo-4{
+    background-image: url(https://br.web.img3.acsta.net/r_1920_1080/pictures/22/09/05/10/11/2324966.jpg);
+}
+
+.photo-5{
+    background-image: url(https://br.web.img3.acsta.net/r_1920_1080/pictures/22/09/05/10/11/2337446.jpg);
+}
+
+.photo-6{
+    background-image: url(https://br.web.img3.acsta.net/r_1920_1080/pictures/22/09/22/17/27/4593247.jpg);
+}
+
+.photo-7{
+    background-image: url(https://br.web.img3.acsta.net/r_1920_1080/pictures/22/09/05/10/11/2298447.jpg);
+}
+
+.photo-8{
+    background-image: url(https://br.web.img3.acsta.net/r_1920_1080/pictures/22/08/08/13/53/1900519.jpg);
+}
+
+.photo-10{
+    background-image: url(https://br.web.img2.acsta.net/r_1920_1080/pictures/22/02/02/11/09/5007048.jpg);
+}
+
+.photo-11{
+    background-image: url(https://br.web.img2.acsta.net/r_1920_1080/pictures/22/06/24/14/47/4048937.jpg);
+}
+
+footer{
+    margin-top: 100px;
+    display: flex;
+    background-color: #ac300e;
+    justify-content: center;
+}
+
+span{
+    color: white;
+    font-family: 'Montserrat:wght@100'; 
+}
+
+.footer-navigation{
+    display: none;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 1024px){
+    
+    .cards-content{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 30px;
+    }
+
+    .card{
+        width: 250px;
+        height: 230px;
+        margin: 10px
+    }
+}
+
+@media(max-width: 768px){
+
+    .cards-content{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 30px;
+    }
+
+    .card{
+        width: 190px;
+        height: 150px;
+        margin: 10px
+    } 
+    
+}
+
+
+@media(max-width: 480px){
+
+
+    nav {
+        display: none;
+    }
+    
+    header{
+        display: none;
+    }
+
+    .cards-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 10px;
+    }
+
+    .card{
+        width: 180px;
+        height: 140px;
+        margin-right: 15px;    
+    } 
+    
+    footer{
+        flex-direction: column;
+        align-items: center;
+        font-size: 13px;
+    }
+
+    span{
+        margin-top: 20px;
+    }
+
+    .footer-navigation{
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);    
+    }
+    
+    .footer-list{
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-left: 14px; 
+        color: aliceblue;
+    }
+}
